@@ -6,4 +6,12 @@
 
 <ion-content>
 
+  <ion-list>
+
+    <ion-item *ngFor="let char of characters">
+
+      <ion-label>{{ char.name }}</ion-label>
+      <ion-label>{{ char.gender }}</ion-label> 
+    </ion-item>
+  </ion-list>
 </ion-content>
