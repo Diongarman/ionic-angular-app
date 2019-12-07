@@ -16,6 +16,22 @@ export class CharactersPage implements OnInit {
     {
       name: 'Connie',
       gender: 'female'
+    },
+    {
+      name: 'Ricky',
+      gender: 'Male'
+    },
+    {
+      name: 'Connie',
+      gender: 'female'
+    },
+    {
+      name: 'Ricky',
+      gender: 'Male'
+    },
+    {
+      name: 'Connie',
+      gender: 'female'
     }
   ];
 
