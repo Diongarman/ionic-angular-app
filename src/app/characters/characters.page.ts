@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CharactersService } from './characters.service';
 import { Character } from './character.model';
 
 @Component({
@@ -8,36 +8,12 @@ import { Character } from './character.model';
   styleUrls: ['./characters.page.scss'],
 })
 export class CharactersPage implements OnInit {
-  characters: Character[] = [
-    {
-      name: 'Ricky',
-      gender: 'Male'
-    },
-    {
-      name: 'Connie',
-      gender: 'female'
-    },
-    {
-      name: 'Ricky',
-      gender: 'Male'
-    },
-    {
-      name: 'Connie',
-      gender: 'female'
-    },
-    {
-      name: 'Ricky',
-      gender: 'Male'
-    },
-    {
-      name: 'Connie',
-      gender: 'female'
-    }
-  ];
+  characters: Character[];
 
-  constructor() { }
+  constructor(private characterService: CharactersService) { }
 
   ngOnInit() {
+    this.characters = this.characterService.getCharacterList();
   }
 
 }
