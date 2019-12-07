@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/characters"></ion-back-button>
+        </ion-buttons>
     <ion-title>character-detail</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +12,7 @@
 
     <ion-row>
       <ion-col>
-        <h1>{{loadedCharacter.name}}</h1>
+        <h1>{{ loadedCharacter.name}}</h1>
       </ion-col>
     </ion-row>
   </ion-grid>

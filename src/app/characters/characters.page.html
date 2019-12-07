@@ -9,7 +9,7 @@
   <ion-list>
 
 
-      <ion-card *ngFor="let char of characters">
+      <ion-card *ngFor="let char of characters" [routerLink]="['./', char.id]">
         <!--<ion-img src="./../assets/images/person-icon.jpg" ></ion-img>-->
           
           <ion-card-header>
