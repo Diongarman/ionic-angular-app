@@ -13,7 +13,8 @@ export class CharactersPage implements OnInit {
   constructor(private characterService: CharactersService) { }
 
   ngOnInit() {
-    this.characters = this.characterService.getCharacterList();
+    this.characters = this.characterService.fetchCharacters();
+
   }
 
 }

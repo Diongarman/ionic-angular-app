@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CharactersPageRoutingModule } from './characters-routing.module';
-
 import { CharactersPage } from './characters.page';
 
 @NgModule({

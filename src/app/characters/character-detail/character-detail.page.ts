@@ -24,9 +24,8 @@ export class CharacterDetailPage implements OnInit {
         return;
       }
       const charId = paramMap.get('characterId');
-      this.loadedCharacter = this.characterService.getCharacter(charId)
-      
-    })
+      this.loadedCharacter = this.characterService.getCharacter(charId);
+    });
   }
 
 }
