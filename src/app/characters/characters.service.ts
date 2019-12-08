@@ -9,6 +9,7 @@ import { Subject } from 'rxjs';
 })
 export class CharactersService {
 
+  charactersChanged = new Subject<Character[]>();
   private characters: Character[];
   constructor(private http: HttpClient) {}
 
@@ -25,6 +26,7 @@ export class CharactersService {
       }))
       .subscribe(transformedData => {
       this.characters = [...transformedData];
+      this.charactersChanged.next(this.characters);
     });
 
     return this.characters;

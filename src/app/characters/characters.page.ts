@@ -14,7 +14,10 @@ export class CharactersPage implements OnInit {
 
   ngOnInit() {
     this.characters = this.characterService.fetchCharacters();
-
+    // subscribe listens for new values
+    this.characterService.charactersChanged.subscribe(characters => {
+      this.characters = characters;
+    });
   }
 
 }
