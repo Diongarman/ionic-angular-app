@@ -7,6 +7,10 @@ const routes: Routes = [
     path: 'characters',
     loadChildren: () => import('./characters/characters.module').then( m => m.CharactersPageModule)
   },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
+  },
 ];
 
 @NgModule({
