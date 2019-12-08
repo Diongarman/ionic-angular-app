@@ -7,14 +7,18 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-item lines="none">
+          <ion-menu-toggle>
+          <ion-item lines="none" routerLink="/characters">
               <ion-icon name="people" slot="start"></ion-icon>
               <ion-label>Character List</ion-label>
           </ion-item>
-          <ion-item lines="none">
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item lines="none" (click)="onLogout()" button>
               <ion-icon name="exit" slot="start"></ion-icon>
               <ion-label>Log Out</ion-label>
           </ion-item>
+        </ion-menu-toggle>
         </ion-list>
       </ion-content>
     
